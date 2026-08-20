@@ -2,6 +2,9 @@
 
 This guide details the deployment of a transparent Wi-Fi proxy for the Mitsubishi Outlander PHEV (2018, 2.0L) using a GL-iNet GL-AR150-ext router running OpenWrt. It resolves deep signal attenuation issues from the driveway to the house, allowing the official remote control app to function flawlessly binnenshuis.
 
+*NOTE:* In order for this setup to work, the router has to downgrade it's security for the client to wpa-psk tkip (which is not very secure). The access to REMOTE-MITS is still protected by WPA2-PSK/WPA3-PSK CCMP-AES but the communication between the router and the car is not that well protected.
+Make sure you connect the router to a "guest" port of your main-router so there's no risk of accessing your internal network!!!
+
 ## Architecture & Network Design
 
 *   **RF Carrier Clamping (Channel 3):** The vehicle's Wi-Fi module operates strictly on Channel 3 (2.4GHz, 20MHz bandwidth, legacy 802.11b/g modes). The proxy locks the radio module onto this frequency.
