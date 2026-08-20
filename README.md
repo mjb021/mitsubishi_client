@@ -7,6 +7,11 @@ So was it a painless exercise, by no means, but it helped me understand the limi
 
 Of course there are few caveats with the outlander itself
 
+## Security issue
+
+Here's the but... The outlander uses the very outdated wpa-psk with TKIP to authenticate and encrypt. That's really not a lot better then WEP. So please make sure you connect the cable from the router in the port you setup of "guest" access in your router. This is a bit too easy to crack.
+So just to be very aware this is a bit of a setback. Tbh, if you don't need it (i.e. in the summer) turn the thing off, it is a security risk. To me it was more of an exercise because I just wanted to be able to do it!!!
+
 ## Outlander caveats
 
 The outlander only allows two devices to be registered to the cars' wifi. So to have both your phone and this tool be able to connect, I recommend resetting the wifi completely before starting this exercise.
