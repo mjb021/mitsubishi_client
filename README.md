@@ -58,3 +58,6 @@ The ultimate disaster-recovery utility. After a hard factory reset, simply push 
 
 ---
 *Note: This architecture has been verified with 0% packet loss and a 5ms latency average. Decoupled completely from heavy `hostapd` or `wpa_supplicant` user-space overhead.*
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
